@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Churchis Enterprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="#home" class="logo">CHURCHIS <span>Enterprise</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="cartOpen" class="cart-btn">Cart (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <section class="hero" id="home">
+    <div>
+      <p class="tag">YOUR SAFETY, OUR PRIORITY</p>
+      <h1>Gear Up.<br><span>Stay Safe.</span></h1>
+      <p>Quality safety equipment for workplaces, construction sites and industries.</p>
+      <a class="btn" href="#products">Shop Products →</a>
+    </div>
+    <div class="hero-icon">🦺</div>
+  </section>
+
+  <section class="section" id="products">
+    <p class="tag">OUR COLLECTION</p>
+    <h2>Shop Safety Products</h2>
+    <input id="searchInput" class="search" placeholder="Search products...">
+    <div id="productGrid" class="products"></div>
+  </section>
+
+  <section class="about" id="about">
+    <p class="tag">ABOUT OUR BUSINESS</p>
+    <h2>Protection You Can Trust.</h2>
+    <p>Churchis Enterprise provides essential protective equipment to help individuals and businesses find suitable safety products.</p>
+  </section>
+
+  <section class="section contact" id="contact">
+    <p class="tag">GET IN TOUCH</p>
+    <h2>Contact Us</h2>
+    <p>Need product information or a quotation? Send us a WhatsApp message.</p>
+    <form id="contactForm">
+      <input id="customerName" placeholder="Your name" required>
+      <textarea id="customerMessage" placeholder="What products do you need?" required></textarea>
+      <button class="btn" type="submit">Contact Us on WhatsApp</button>
+    </form>
+  </section>
+
+  <section id="contactfreely">
+    <h2>Contact Us</h2>
+    <p>Have questions or need more information? Chat with us on WhatsApp!</p>
+
+    <a
+        href="https://wa.me/546135160?text=Hello%20ChurchisEnterprise%2C%20I%20would%20like%20more%20information."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="whatsapp-button">
+        <button class="btn" type="submit">Contact Us on WhatsApp</button>
+    </a>
+</section>
+
+  <footer>
+    <strong>Churchis Enterprise</strong>
+    <p>Gear Up. Stay Safe.</p>
+    <small>© <span id="year"></span> Churchis Enterprise</small>
+  </footer>
+
+  <div id="overlay" class="overlay"></div>
+  <aside id="cartDrawer" class="cart-drawer">
+    <button id="cartClose" class="close">✕</button>
+    <h2>Your Shopping Cart</h2>
+    <div id="cartItems"></div>
+    <h3>Total: <span id="cartTotal">GH₵0.00</span></h3>
+    <button id="checkoutButton" class="btn">Order on WhatsApp</button>
+    <button id="clearCart" class="clear">Clear Cart</button>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
